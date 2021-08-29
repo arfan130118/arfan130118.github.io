@@ -33,6 +33,7 @@ const btnSearch = document.querySelector('.btn-search');
 btnSearch.addEventListener('click', async function () {
     const inputKeyword = document.querySelector('.input-keyword');
     const movies = await getMovies(inputKeyword.value);
+    console.log(movies);
     updateMovies(movies);
 });
 
